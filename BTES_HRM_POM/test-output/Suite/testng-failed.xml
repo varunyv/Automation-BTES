@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Test.PimTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="enterId_search_text_box"/>
+        </methods>
+      </class> <!-- Test.PimTest -->
+      <class name="Test.LoginTest">
+        <methods>
+          <include name="Login_TestCase_inavlid_username_invalid_password"/>
+          <include name="setup"/>
+          <include name="Login_TestCase_Without_Enteringdata"/>
+        </methods>
+      </class> <!-- Test.LoginTest -->
+      <class name="Test.Add_employee_Test">
+        <methods>
+          <include name="SaveButton"/>
+          <include name="Login_TestCase_valid_username_valid_password"/>
+          <include name="setup"/>
+          <include name="Contactdetails"/>
+          <include name="teardown"/>
+          <include name="Add_Emp"/>
+          <include name="Perform_Pim"/>
+          <include name="Login_TestCase_Without_Enteringdata"/>
+        </methods>
+      </class> <!-- Test.Add_employee_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
